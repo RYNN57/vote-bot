@@ -3,6 +3,8 @@ import discord
 import datetime
 import openpyxl
 import random
+impost os
+
 client = discord.Client()
 # 1-6에서 생성된 토큰을 이곳에 입력해주세요.
 token = ""
@@ -263,5 +265,6 @@ async def on_message(message):
                     await client.send_message(channel,'투표 완료')
             else:
                 await client.send_message(channel,'투표에 참여하지 않았습니다. 투표에 참여 후 다시 시도해주세요.')
-            
+
+access_token = os.environ["BOT_TOKEN"]
 client.run(token)
